@@ -24,7 +24,10 @@ export async function getContract() {
     await gateway.connect(ccp, {
         wallet,
         identity: process.env.USER_ID!,
-        discovery: { enabled: true, asLocalhost: true }
+        discovery: {
+            enabled: true,
+            asLocalhost: process.env.AS_LOCALHOST === 'true'
+            }
     });
 
     const network = await gateway.getNetwork(process.env.CHANNEL_NAME!);
