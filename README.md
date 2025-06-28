@@ -72,10 +72,10 @@ docker build -t fabric-rest-api .
 Make sure the `.env` file is present in the `fabric-rest-api/` directory with the following content:
 
 ```env
-PORT=3000
-CONNECTION_PROFILE=../fabric/connection-org1.json
-WALLET_PATH=../wallet
+CONNECTION_PROFILE=./fabric/connection-org1.json
+WALLET_PATH=./dist/wallet
 USER_ID=Admin
+AS_LOCALHOST=false
 MSP_ID=Org1MSP
 CHANNEL_NAME=mychannel
 CHAINCODE_NAME=assetTransfer
