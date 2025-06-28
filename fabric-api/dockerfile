@@ -1,0 +1,23 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy full project (includes fabric/ and src/)
+COPY . .
+
+# Build TypeScript code
+RUN npm run build
+
+# ✅ Copy fabric files into expected place BEFORE identity import
+RUN mkdir -p dist/fabric && cp fabric/connection-org1.json dist/fabric/ && \
+    mkdir -p dist/crypto && cp -r fabric/crypto dist/crypto/
+
+# ✅ Run import script AFTER fabric files are copied
+RUN node dist/scripts/importIdentity.js
+
+EXPOSE 3000
+CMD ["node", "dist/server.js"]
