@@ -110,3 +110,14 @@ docker run -p 3000:3000 \
 * `asLocalhost` must be `true` in your code since you're using local Fabric setup.
 
 ---
+
+## Sucessful Output After Testing 
+
+### 1. Using Peer CLI
+<img width="1178" alt="Screenshot 2025-06-28 at 4 35 57 PM" src="https://github.com/user-attachments/assets/21fbfea0-ec15-48fb-aa26-3e9c0eb71cef" />
+
+### 1. Using API calls
+<img width="1330" alt="Screenshot 2025-06-28 at 5 11 55 PM" src="https://github.com/user-attachments/assets/eb03902b-37f2-4e69-85ee-790b4848937a" />
+
+
+
