@@ -1,6 +1,6 @@
-# 🔗 Web3 Hyperledger Fabric Assignment
+# 🔗 SmartFalcon Hyperledger Fabric Assignment
 
-This project demonstrates how to build a full-stack blockchain application using **Hyperledger Fabric**, **TypeScript-based chaincode**, and a **Dockerized REST API backend** to interact with the network.
+This project demonstrates how to build a full-stack blockchain application using **Hyperledger Fabric**, **TypeScript-based **, and a **Dockerized REST API backend** to interact with the network.
 
 ## Project Structure
 
