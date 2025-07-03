@@ -33,8 +33,8 @@ This project demonstrates how to build a full-stack blockchain application using
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/karthiksriramoju/hyperledger-assignment.git
-cd hyperledger-assignment
+git clone https://github.com/karthiksriramoju/SmartFalcon-Assignment.git
+cd SmartFalcon-Assignment
 ```
 
 ---
